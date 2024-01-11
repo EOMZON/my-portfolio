@@ -1,3 +1,6 @@
+import React from 'react';
+import Image from 'next/image';
+
 export default function Home() {
   const Header = () => {
     return (
@@ -25,10 +28,25 @@ export default function Home() {
     );
   };
 
+  const ImageComponent = () => {
+    return (
+      <div>
+        <Image
+          src="/pjHomeCover.svg"
+          alt="Next.js Logo"
+          width={180}
+          height={37}
+          priority
+        />
+      </div>
+    );
+  };
+
   return (
     <main>
       <Header />
-      <Section title={'👇 My works'} content={'text'} />
+      <Section title={'👇 My works'} content={<ImageComponent />} />
+
       <div className=" mt-24 ml-12">
         <h1 className="text-4xl font-bold ">👇 About</h1>
         <p className="text-2xl mt-8">{aboutMe}</p>
