@@ -11,9 +11,9 @@ export default function Home() {
   };
   const Section = ({ title, content }) => {
     return (
-      <div className="mt-24 ml-12">
-        <h1 className="text-4xl font-bold">{title}</h1>
-        {content && <div className="text-2xl mt-8">{content}</div>}
+      <div className="mt-24 ml-12 mr-12">
+        <h1 className="text-4xl font-bold">👇 {title}</h1>
+        {content && <div>{content}</div>}
       </div>
     );
   };
@@ -34,28 +34,43 @@ export default function Home() {
         <Image
           src="/pjHomeCover.svg"
           alt="Next.js Logo"
-          width={180}
-          height={37}
+          width={1198}
+          height={656}
           priority
+          className="mt-4"
         />
       </div>
     );
   };
 
+  const HomeCovers = () => {
+    return (
+      <div>
+        <ImageComponent />
+        <ImageComponent />
+        <ImageComponent />
+      </div>
+    );
+  };
+
+  const AboutMe = () => {
+    return (
+      <>
+        <p className="text-2xl mt-8">{aboutMe}</p>
+        <p className="text-1xl mt-8">{aboutMeDescription}</p>
+      </>
+    );
+  };
   return (
     <main>
       <Header />
-      <Section title={'👇 My works'} content={<ImageComponent />} />
+      <Section title={'My works'} content={<HomeCovers />} />
 
-      <div className=" mt-24 ml-12">
-        <h1 className="text-4xl font-bold ">👇 About</h1>
-        <p className="text-2xl mt-8">{aboutMe}</p>
-        <p className="text-1xl mt-8">{aboutMeDescription}</p>
-      </div>
+      <Section title={'About'} content={<AboutMe />} />
 
-      <Section title={'👇 Skills'} content={'text'} />
-      <Section title={'👇 Testimonials'} content={'text'} />
-      <Section title={'👇 Resume'} content={'text'} />
+      <Section title={'Skills'} />
+      <Section title={'Testimonials'} />
+      <Section title={'Resume'} />
 
       <Footer />
     </main>
