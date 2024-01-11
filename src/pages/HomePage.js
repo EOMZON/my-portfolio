@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <main>
       <Header />
-      <MyWorks />
+      {/* <MyWorks /> */}
       <AboutMe />
       <Section title={'Skills'} />
       <Section title={'Testimonials'} />
