@@ -1,16 +1,24 @@
 import { Section } from './Section';
-import Image from 'next/image';
-const ImageComponent = () => {
+// import Image from 'next/image';
+// const ImageComponent = () => {
+//   return (
+//     <div>
+//       <Image
+//         src="/pjHomeCover.svg"
+//         alt="Next.js Logo"
+//         width={1198}
+//         height={656}
+//         priority
+//         className="mt-4"
+//       />
+//     </div>
+//   );
+// };
+
+const ImgComponent = () => {
   return (
     <div>
-      <Image
-        src="/pjHomeCover.svg"
-        alt="Next.js Logo"
-        width={1198}
-        height={656}
-        priority
-        className="mt-4"
-      />
+      <img src="/pjHomeCover.svg" alt="Your UI" className="mt-4" />
     </div>
   );
 };
@@ -18,9 +26,9 @@ const ImageComponent = () => {
 const HomeCovers = () => {
   return (
     <div>
-      <ImageComponent />
-      <ImageComponent />
-      <ImageComponent />
+      <ImgComponent />
+      <ImgComponent />
+      <ImgComponent />
     </div>
   );
 };
