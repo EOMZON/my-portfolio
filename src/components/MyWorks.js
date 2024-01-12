@@ -4,7 +4,7 @@ import Image from 'next/image';
 const ImgComponent = () => {
   return (
     <div>
-      <img src="/pjHomeCover.svg" alt="Your UI" className="mt-4" />
+      <img src="/images/pjHomeCover.svg" alt="Your UI" className="mt-4" />
     </div>
   );
 };
@@ -12,7 +12,7 @@ const ImgComponent = () => {
 const ImgComponentPNG = () => {
   return (
     <div>
-      <img src="/pjHomeCover.png" alt="Your UI" className="mt-4" />
+      <img src="/images/pjHomeCover.png" alt="Your UI" className="mt-4" />
     </div>
   );
 };
@@ -21,7 +21,7 @@ const ImageComponent = () => {
   return (
     <div>
       <Image
-        src="/pjHomeCover.svg"
+        src="/images/pjHomeCover.svg"
         alt="Next.js Logo"
         width={1198}
         height={656}
