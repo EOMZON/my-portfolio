@@ -23,6 +23,7 @@ const nextConfig = {
   basePath,
   assetPrefix,
   output: 'export',
+  // 如果使用Image图像优化组件需要开启这个，github pages 不支持next的图像优化
   images: {
     unoptimized: true,
   },
