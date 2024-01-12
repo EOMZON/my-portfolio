@@ -32,12 +32,37 @@ const ImageComponent = () => {
   );
 };
 
+const ImageComponentPNG = () => {
+  return (
+    <div>
+      <Image
+        src="images/pjHomeCover.png"
+        alt="Next.js Logo"
+        width={1198}
+        height={656}
+        priority
+        className="mt-4"
+      />
+    </div>
+  );
+};
+
+const MidTitle = ({ content }) => {
+  return (
+    <div className="mt-8 ">
+      <h1 className="text-2xl  text-gray-400">{content}</h1>
+    </div>
+  );
+};
+
 const HomeCovers = () => {
   return (
     <div>
+      <MidTitle content={'SVG'} />
       <ImgComponent />
       <ImageComponent />
       <ImgComponentPNG />
+      <ImageComponentPNG />
     </div>
   );
 };
