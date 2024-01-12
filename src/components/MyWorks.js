@@ -3,7 +3,7 @@ import { Section } from './Section';
 const ImgComponent = () => {
   return (
     <div>
-      <img src="/PJ-HOMEPAGE.png" alt="Your UI" className="mt-4" />
+      <img src="/PJ-HOMEPAGE.svg" alt="Your UI" className="mt-4" />
     </div>
   );
 };
