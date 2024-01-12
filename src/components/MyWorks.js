@@ -61,6 +61,8 @@ const HomeCovers = () => {
       <MidTitle content={'SVG'} />
       <ImgComponent />
       <ImageComponent />
+
+      <MidTitle content={'PNG'} />
       <ImgComponentPNG />
       <ImageComponentPNG />
     </div>
