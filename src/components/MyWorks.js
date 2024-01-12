@@ -8,12 +8,20 @@ const ImgComponent = () => {
   );
 };
 
+const ImgComponentPNG = () => {
+  return (
+    <div>
+      <img src="/PJ-HOMEPAG.png" alt="Your UI" className="mt-4" />
+    </div>
+  );
+};
+
 const HomeCovers = () => {
   return (
     <div>
       <ImgComponent />
       <ImgComponent />
-      <ImgComponent />
+      <ImgComponentPNG />
     </div>
   );
 };
